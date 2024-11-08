@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+<!-- Contenedor principal con fondo gris -->
+<div class="container mx-auto px-8 py-12 bg-gray-100 border-2 border-gray-300 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-3xl hover:border-gray-500">
+
+  <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900 tracking-wide">Nuestra Carta</h2>
+
+  <!-- Sección de Seccions -->
+  <section class="mb-12">
+    <h3 class="text-3xl font-semibold text-gray-800 mb-6 uppercase tracking-wide">Bebidas</h3>
+    <app-carta-seccion [secciones]="bebidas"></app-carta-seccion>
+    <h3 class="text-3xl font-semibold text-gray-800 mb-6 uppercase tracking-wide">Entradas</h3>
+    <app-carta-seccion [secciones]="entradas"></app-carta-seccion>
+    <h3 class="text-3xl font-semibold text-gray-800 mb-6 uppercase tracking-wide">Guarniciones</h3>
+    <app-carta-seccion [secciones]="guarniciones"></app-carta-seccion>
+    <h3 class="text-3xl font-semibold text-gray-800 mb-6 uppercase tracking-wide">Principales</h3>
+    <app-carta-seccion [secciones]="principales"></app-carta-seccion>
+    <h3 class="text-3xl font-semibold text-gray-800 mb-6 uppercase tracking-wide">Postres</h3>
+    <app-carta-seccion [secciones]="postres"></app-carta-seccion>
+  </section>
+<app-footer></app-footer> 
